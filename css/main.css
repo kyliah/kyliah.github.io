@@ -1,0 +1,408 @@
+
+
+/* --------  FONT  -------- */
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|Roboto+Slab:700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600);
+@font-face {
+    font-family: MrRobot;
+    src: url('../fonts/MrRobot.ttf'),
+    url('../fonts/MrRobot.woff') format('woff'), 
+    url('../fonts/MrRobot.ttf') format('truetype'), 
+    url('../fonts/MrRobot.svg') format('svg'); 
+}
+
+body {
+   background-color: #f2f2f2 ;
+   font-family: 'Raleway', sans-serif;
+   font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* --------GLOBAL-------- */
+
+.global-Container{
+  padding: 20px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.profil img {
+  border-radius: 75px;
+  width: 150px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* --------HEADER-------- */
+
+header {
+  background-image: url("../img/background.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'MrRobot', arial;
+  font-size: 120px;
+  display: inline-block;
+  padding: 20px 0 0 0;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  width: 700px;
+  opacity: 0.8;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+header #mobile-header {
+  position: fixed;
+  z-index: 10;
+  right: 10px;
+  width: 26px;
+  float: right;
+  display: none;
+  top: 10px;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+header #mobile-header a {
+  display: block;
+  text-align: center;
+}
+
+header #mobile-header i {
+  color:#fff;
+  font-size:30px;
+  width: 25px;
+}
+
+header #nav-menu {
+  position: fixed;
+  top: 60px;
+  height: auto;
+  background-color: gray;
+  width: 300px;
+  z-index: 1;
+  right: -1000px;
+}
+
+header #nav-menu li {
+  height: 40px;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+  line-height: 40px;
+  text-align: left;
+}
+
+header #nav-menu li:hover {
+  background-color: #333;
+}
+
+header #nav-menu li a {
+  color: #fff;
+}
+
+/* --------SECTION-------- */
+
+section {
+  width: 660px;
+  float: left;
+}
+section article .title {
+  text-align: center;
+  line-height: 35px;
+  padding: 40px;
+}
+
+section article h4 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+}
+section article h5 {
+  color: red;
+  font-size: 18px;
+}
+
+/* -------- ASIDE -------- */
+
+aside {
+  width: 400px;
+  float: right;
+}
+
+aside article {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+aside article .profil {
+  text-align: center;
+  padding: 20px 0;
+
+}
+
+aside article.social-media {
+  text-align: center;
+  padding: 40px;
+}
+
+aside article.competence, aside article.contact {
+  text-align: left;
+  padding: 40px;
+}
+
+aside article.competence ul {
+  width: 86%;
+}
+
+aside article.competence li {
+    display: inline-block;
+    background-color: gray;
+    padding: 15px 10px;
+    color: #fff;
+    margin: 4px;
+}
+
+aside article.competence li:hover {
+  background-color: #ff0000;
+  cursor: pointer;
+}
+
+aside article.social-media i { 
+  font-size: 60px;
+  margin: 0 10px;
+}
+
+aside article.social-media .fa-facebook-square { 
+  color: #3B5998;
+}
+
+aside article.social-media .fa-twitter-square { 
+  color: #61C5EC;
+}
+
+aside article.social-media .fa-linkedin-square{ 
+  color: #0077B5;
+}
+
+aside article.social-media .fa-github-square{ 
+  color: #6CC644;
+}
+
+aside article.contact {
+  background-color: #333;
+  color: #fff;
+}
+
+aside article.contact .title {
+  color: #fff;
+}
+
+aside article.contact form input {
+  height: 40px;  
+}
+
+aside article.contact form legend {
+  line-height: 23px;
+  text-align: justify;
+}
+
+aside article.contact form input, 
+aside article.contact form textarea {
+  width: 100%;
+  border: 0 none;
+  font-size: 18px;
+  margin: 6px 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+aside article.contact form input:focus,
+aside article.contact form textarea:focus {
+  box-shadow: 0px 0px 10px #fff;
+  border: 0 none;
+  outline: 0 none;
+}
+
+aside article.contact form button {
+  color: #fff;
+  background-color: red;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  border: 0 none;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+aside article .title {
+  border-bottom: 3px solid red;
+  text-align: center;
+  padding-bottom: 5px;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* -------- ARTICLE -------- */
+
+article {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+}
+
+article.presentation {
+  text-align: center;
+}
+
+article .top {
+  position: relative;
+}
+
+article .top .date {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  `font-weight: 700;
+  bottom:30px;
+  left:0;
+}
+
+article .text {
+  padding: 40px 30px;
+  text-align: justify;
+}
+
+article .text p, p {
+  line-height: 25px;
+}
+
+
+.fa.fa-caret-square-o-up {
+    font-size: 50px;
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    line-height: 43px;
+    border-radius: 9px;
+    color: #ff0000;
+}
+
+footer {
+ padding: 20px;
+ font-size: 12px;
+ background-color: black;
+ color: white;
+ text-align: center;
+ clear: both;
+}
+
+/* --------QUERIES-------- */
+
+
+@media screen and (max-width: 980px){
+  .global-Container{
+    width: 70%
+  }
+
+  section {
+    width: 100%;
+    float: none;
+  }
+
+  aside {
+    width: 100%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  header {
+    height: inherit;
+    background: 0 none;
+  }
+
+  header h1{
+    font-size: 40px;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    opacity: 1;
+    position: fixed;
+    left: 0;
+    transform: none;
+    top: 0;
+    z-index: 1;
+    text-align: left;
+  }
+
+  header #mobile-header{
+    display: block;
+  }
+
+
+  .global-Container{
+      width: 100%;
+      margin-top: 40px;
+  }
+
+  section {
+    width: 100%;
+    float: none;
+  }
+
+  aside {
+    width: 100%;
+    float: none;
+  }
+
+  aside article.competence ul {
+    width: 86%;
+  }
+
+  aside article.social-media {
+      padding: 30px;
+  }
+
+}
+
+
+
+
+
+

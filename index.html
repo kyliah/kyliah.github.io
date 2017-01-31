@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html>
+<!-- //balise ouvrante -->
+  <head>
+    <title>Mon Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="mon blog">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mr. robot</h1>
+
+      <div id="mobile-header">
+        <a id="right-menu" href="#">
+          <i class="fa fa-bars">&nbsp;</i>
+        </a>
+      </div>
+
+      <div id="nav-menu">
+        <nav class="nav">
+          <ul>
+            <li data-article="about-me"><a href="#">Qui suis-je</a></li>
+            <li data-article="social-media"><a href="#">Réseaux sociaux</a></li>
+            <li data-article="competence"><a href="#">Compétence</a></li>
+            <li data-article="contact"><a href="#">Contactez-moi</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="global-Container">
+      <section>
+        <article>
+          <div class="title">
+            <h4>Piratage de Dyn</h4>
+            <h5>Le danger des objets connectés</h5>
+          </div>
+          <div style="position: relative;" class="top">
+            <img src="img/articles/1.jpg">
+            <span class="date">26/01/2016</span>
+          </div>
+
+          <div class="text">
+            <p>
+              L’Internet of Things (IoT) - ou "Internet des objets" - a montré ce week-end ses faiblesses en termes de sécurité 
+              informatique. La spectaculaire attaque qui a rendu inaccessible pendant plusieurs heures, vendredi 21 octobre, des 
+              géants du Web tels que Twitter, PayPal ou Spotify a été menée en utilisant une faille de sécurité présente sur des 
+              objets connectés comme les webcams, les imprimantes ou les thermostats.
+            </p>
+            <br/><br/>
+            <p>
+              Les cybercriminels ont envoyé, via environ dix millions d’objets connectés, des requêtes en continu à la société américaine Dyn (qui s'occupe de la résolution des noms de domaines). Submergée, cette dernière 
+              n’a plus pu faire face aux demandes du commun des internautes qui, tapant une requête dans leur barre 
+              d’adresse Internet, n'étaient pas redirigés vers le bon site.
+            </p>
+          </div>
+        </article>
+        <article>
+          <div class="title">
+            <h4>Mt Gox</h4>
+            <h5>320 millions d’euros détournés</h5>
+          </div>
+          <div style="position: relative;" class="top">
+            <img src="img/articles/2.jpg">
+            <span class="date">28/01/2016</span>
+          </div>
+
+          <div class="text">
+            <p>
+              L’affaire MtGox est loin d'être terminée à ce jour. La version officielle affirme que des pirates auraient pénétré 
+              le système de cet échangeur pour voler 850 000 bitcoins, ce qui représentait 450 millions de dollars au moment de 
+              l’annonce, soit plus de 320 millions d’euros. Le piratage a eu lieu sur plusieurs années sans que l’on ait de date 
+              précise. Une note interne parlait de deux ans et affirmait que l’attaque fut si importante qu’elle toucha même les 
+              bitcoins offline de la société qui fut très critiquée pour son système de sécurité médiocre. 
+            </p>
+            <br/>
+          </div>
+        </article>
+        <article>
+          <div class="title">
+            <h4>La campagne présidentielle américaine</h4>
+            <h5>Phishing à la Maison Blanche</h5>
+          </div>
+          <div class="top">
+            <img src="img/articles/3.jpg">
+            <span class="date">26/01/2016</span>
+          </div>
+
+          <div class="text">
+            <p>
+              Les médias américains ont révélé que des pirates soutenus par le gouvernement chinois ont pénétré les ordinateurs 
+              utilisés pendant la campagne présidentielle opposant Barack Obama à John McCain en 2008 pour y dérober des documents 
+              secrets portant sur les activités politiques des deux candidats et leurs positions sur les affaires chinoises en 
+              cours.
+            </p>
+            <br/><br/>
+            <p>
+              Le FBI a découvert le piratage à l’été 2008, mais les pirates ont continué leurs activités pendant encore plusieurs 
+              mois. En 2009, M. Obama avait fait savoir que des machines avaient été piratées et des fichiers volés, mais la 
+              nature et la portée de l’attaque avaient été tenues secrètes. Les hackers ont principalement utilisé du phishing 
+              pour obtenir les identifiants et mots de passe des personnes utilisant ces machines.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <aside>
+        <article id="about-me" class="about-me">
+          <div class="profil">
+            <img src="img/avatar.png">
+          </div>
+
+          <span class="title">Qui suis-je ?</span>
+          <div class="text">
+            <p>
+                Je m'appelle Elliot Alderson. Je suis ingénieur en cybersécurité le jour et hacker la nuit. Je vous invite à parcourir mes articles pour en savoir plus l'histoire du hacking.
+            </p>
+          </div>
+        </article>
+        <article id="social-media" class="social-media">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter-square"></i>
+          <i class="fa fa-linkedin-square"></i>
+          <i class="fa fa-github-square"></i> 
+        </article>
+        <article id="competence" class="competence">
+          <span class="title">Mes comp&eacute;tences</span>
+          <br><br><br>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JQuery</li>
+
+            <li>Javascript</li>
+            <li>Node.JS</li>
+            <li>Express</li>
+
+            <li>React</li>
+            <li>React Native</li>
+            <li>IOS</li>
+          </ul>
+        </article>
+        <article id="contact" class="contact">
+          <span class="title">Contactez-moi</span>
+          <br><br><br>
+          <form method="post" action="">
+           
+             <fieldset>
+                <legend>Vous souhaitez me rencontrer ou échanger sur le hacking en général ? Laissez-moi un message !</legend>
+                <br>
+                <input type="text" name="nom" placeholder="Nom"/>
+                <input type="email" name="email" placeholder="Email" />
+                <textarea name="message"  cols="40" rows="10" placeholder="Taper votre message..."></textarea>
+                <button type="submit">envoyer</button>
+             </fieldset>
+          </form>
+        </article>
+      </aside>
+      <br class="clearfix">
+      <i class="fa fa-caret-square-o-up">&nbsp;</i>
+    </div>
+
+    <footer>
+      Site réalisé par Fatou San - 2017
+    </footer>
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+
+</html>
+
+
+
+
